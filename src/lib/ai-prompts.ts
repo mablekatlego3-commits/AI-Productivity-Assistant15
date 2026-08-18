@@ -5,7 +5,7 @@ export function emailPrompt(input: {
   purpose: string;
   tone: string;
   length: string;
-  recipient?: string;
+  recipient?: string | undefined;
 }) {
   const lengthGuide: Record<string, string> = {
     Short: "3-5 sentences total",
