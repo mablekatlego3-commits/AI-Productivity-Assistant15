@@ -78,10 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "WorkMate AI — Workplace Productivity Assistant" },
+      { title: "FlowDesk AI — Workplace Productivity Assistant" },
       { name: "description", content: "AI-powered workplace productivity assistant for emails, meeting summaries, task planning and workplace chat." },
-      { name: "author", content: "WorkMate AI" },
-      { property: "og:title", content: "WorkMate AI" },
+      { name: "author", content: "FlowDesk AI" },
+      { property: "og:title", content: "FlowDesk AI" },
       { property: "og:description", content: "AI-powered workplace productivity assistant." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

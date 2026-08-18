@@ -19,15 +19,15 @@ import { clearActivity } from "@/lib/stats";
 export const Route = createFileRoute("/settings")({
   head: () => ({
     meta: [
-      { title: "Settings | WorkMate AI" },
+      { title: "Settings | FlowDesk AI" },
       {
         name: "description",
-        content: "Manage your WorkMate AI workspace preferences, defaults and stored activity.",
+        content: "Manage your FlowDesk AI workspace preferences, defaults and stored activity.",
       },
-      { property: "og:title", content: "Settings | WorkMate AI" },
+      { property: "og:title", content: "Settings | FlowDesk AI" },
       {
         property: "og:description",
-        content: "Workspace preferences and defaults for WorkMate AI.",
+        content: "Workspace preferences and defaults for FlowDesk AI.",
       },
     ],
   }),
@@ -45,7 +45,7 @@ function SettingsPage() {
       <PageHeader
         icon={SettingsIcon}
         title="Settings"
-        description="Personalise WorkMate AI defaults and manage the activity stored in this browser."
+        description="Personalise FlowDesk AI defaults and manage the activity stored in this browser."
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
@@ -93,7 +93,7 @@ function SettingsPage() {
           <section className="surface-card space-y-3 p-5">
             <h2 className="text-sm font-semibold">Data & privacy</h2>
             <p className="text-sm text-muted-foreground">
-              WorkMate AI stores your recent activity locally in this browser only. Prompts are sent
+              FlowDesk AI stores your recent activity locally in this browser only. Prompts are sent
               to the AI provider to generate results and are not used to train models.
             </p>
             <Button

@@ -30,7 +30,7 @@ function Brand() {
         <Sparkles className="h-4.5 w-4.5" aria-hidden />
       </div>
       <div className="leading-tight">
-        <p className="text-sm font-semibold">WorkMate AI</p>
+        <p className="text-sm font-semibold">FlowDesk AI</p>
         <p className="text-xs text-muted-foreground">Productivity assistant</p>
       </div>
     </div>

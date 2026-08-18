@@ -16,16 +16,16 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/planner")({
   head: () => ({
     meta: [
-      { title: "AI Task Planner | WorkMate AI" },
+      { title: "AI Task Planner | FlowDesk AI" },
       {
         name: "description",
         content:
           "Enter your workplace tasks and get an AI-prioritised list plus a suggested daily schedule.",
       },
-      { property: "og:title", content: "AI Task Planner | WorkMate AI" },
+      { property: "og:title", content: "AI Task Planner | FlowDesk AI" },
       {
         property: "og:description",
-        content: "Prioritise your workload and build a daily schedule with WorkMate AI.",
+        content: "Prioritise your workload and build a daily schedule with FlowDesk AI.",
       },
     ],
   }),
@@ -95,7 +95,7 @@ function PlannerPage() {
       <PageHeader
         icon={Sparkles}
         title="AI Task Planner"
-        description="Add your tasks with optional deadlines and estimates, then let WorkMate AI prioritise them and build a suggested daily schedule."
+        description="Add your tasks with optional deadlines and estimates, then let FlowDesk AI prioritise them and build a suggested daily schedule."
       />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,460px)_minmax(0,1fr)]">

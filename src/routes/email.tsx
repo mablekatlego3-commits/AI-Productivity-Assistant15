@@ -22,16 +22,16 @@ import { logActivity } from "@/lib/stats";
 export const Route = createFileRoute("/email")({
   head: () => ({
     meta: [
-      { title: "Smart Email Generator | WorkMate AI" },
+      { title: "Smart Email Generator | FlowDesk AI" },
       {
         name: "description",
         content:
           "Turn a few key points into a polished workplace email with a chosen tone and length.",
       },
-      { property: "og:title", content: "Smart Email Generator | WorkMate AI" },
+      { property: "og:title", content: "Smart Email Generator | FlowDesk AI" },
       {
         property: "og:description",
-        content: "Draft professional workplace emails in seconds with WorkMate AI.",
+        content: "Draft professional workplace emails in seconds with FlowDesk AI.",
       },
     ],
   }),
@@ -68,7 +68,7 @@ function EmailPage() {
       <PageHeader
         icon={Mail}
         title="Smart Email Generator"
-        description="Describe the purpose and key points, choose a tone and length, and WorkMate AI drafts the email for you."
+        description="Describe the purpose and key points, choose a tone and length, and FlowDesk AI drafts the email for you."
       />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)]">
