@@ -14,13 +14,13 @@ import { timeAgo, useActivity, type ActivityKind } from "@/lib/stats";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "WorkMate AI — Workplace Productivity Assistant" },
+      { title: "FlowDesk AI — Workplace Productivity Assistant" },
       {
         name: "description",
         content:
-          "WorkMate AI writes emails, summarises meetings, prioritises tasks and answers workplace questions so professionals save time.",
+          "FlowDesk AI writes emails, summarises meetings, prioritises tasks and answers workplace questions so professionals save time.",
       },
-      { property: "og:title", content: "WorkMate AI — Workplace Productivity Assistant" },
+      { property: "og:title", content: "FlowDesk AI — Workplace Productivity Assistant" },
       {
         property: "og:description",
         content:
@@ -84,7 +84,7 @@ function Dashboard() {
           Your workday, <span className="text-gradient-brand">assisted by AI</span>
         </h1>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-          WorkMate AI is an AI-powered workplace productivity assistant. It drafts professional
+          FlowDesk AI is an AI-powered workplace productivity assistant. It drafts professional
           emails, summarises meetings into decisions and action items, prioritises your tasks and
           answers everyday workplace questions — so you spend less time on admin and more time on
           work that matters.
@@ -103,7 +103,7 @@ function Dashboard() {
             <Link to="/planner">Plan my day</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link to="/chat">Ask WorkMate AI</Link>
+            <Link to="/chat">Ask FlowDesk AI</Link>
           </Button>
         </div>
       </section>

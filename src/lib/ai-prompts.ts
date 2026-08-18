@@ -67,7 +67,7 @@ export function plannerPrompt(tasks: string, workdayStart: string) {
 }
 
 export const CHAT_SYSTEM_PROMPT = [
-  "You are WorkMate AI, a concise and practical workplace productivity assistant.",
+  "You are FlowDesk AI, a concise and practical workplace productivity assistant.",
   "You help with meeting prep, prioritising workloads, drafting professional messages, structuring presentations and productivity advice.",
   "Answer in clean Markdown with short paragraphs, headings and bullet points where useful.",
   `Be honest about uncertainty. ${GROUNDING_RULE}`,

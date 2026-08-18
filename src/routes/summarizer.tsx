@@ -14,16 +14,16 @@ import { logActivity } from "@/lib/stats";
 export const Route = createFileRoute("/summarizer")({
   head: () => ({
     meta: [
-      { title: "Meeting Notes Summarizer | WorkMate AI" },
+      { title: "Meeting Notes Summarizer | FlowDesk AI" },
       {
         name: "description",
         content:
           "Turn raw meeting notes into a summary with decisions, action items, deadlines and owners.",
       },
-      { property: "og:title", content: "Meeting Notes Summarizer | WorkMate AI" },
+      { property: "og:title", content: "Meeting Notes Summarizer | FlowDesk AI" },
       {
         property: "og:description",
-        content: "Summarise meetings into decisions, action items and deadlines with WorkMate AI.",
+        content: "Summarise meetings into decisions, action items and deadlines with FlowDesk AI.",
       },
     ],
   }),

@@ -14,13 +14,13 @@ import { logActivity } from "@/lib/stats";
 export const Route = createFileRoute("/chat")({
   head: () => ({
     meta: [
-      { title: "Workplace AI Chat | WorkMate AI" },
+      { title: "Workplace AI Chat | FlowDesk AI" },
       {
         name: "description",
         content:
-          "Chat with WorkMate AI for meeting prep, prioritising workloads, drafting replies and presentation structure.",
+          "Chat with FlowDesk AI for meeting prep, prioritising workloads, drafting replies and presentation structure.",
       },
-      { property: "og:title", content: "Workplace AI Chat | WorkMate AI" },
+      { property: "og:title", content: "Workplace AI Chat | FlowDesk AI" },
       {
         property: "og:description",
         content: "An AI assistant for everyday workplace productivity questions.",
@@ -104,7 +104,7 @@ function ChatPage() {
       <PageHeader
         icon={MessageSquare}
         title="Workplace AI Chat"
-        description="Ask WorkMate AI for help with meetings, workload, professional writing and productivity."
+        description="Ask FlowDesk AI for help with meetings, workload, professional writing and productivity."
       />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_260px]">
@@ -154,7 +154,7 @@ function ChatPage() {
             {status === "submitted" ? (
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-primary" aria-hidden />
-                WorkMate AI is thinking…
+                FlowDesk AI is thinking…
               </div>
             ) : null}
 
@@ -171,7 +171,7 @@ function ChatPage() {
           >
             <div className="flex items-end gap-2">
               <Textarea
-                aria-label="Message WorkMate AI"
+                aria-label="Message FlowDesk AI"
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
                 onKeyDown={(event) => {

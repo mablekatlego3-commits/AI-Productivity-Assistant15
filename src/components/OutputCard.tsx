@@ -14,7 +14,7 @@ export function OutputSkeleton() {
       <Skeleton className="h-3 w-11/12" />
       <Skeleton className="h-3 w-9/12" />
       <Skeleton className="h-3 w-10/12" />
-      <p className="pt-1 text-xs text-muted-foreground">WorkMate AI is generating your result…</p>
+      <p className="pt-1 text-xs text-muted-foreground">FlowDesk AI is generating your result…</p>
     </div>
   );
 }
