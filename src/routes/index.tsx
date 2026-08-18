@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Draft emails, summarise meetings, plan tasks and chat with an AI workplace assistant.",
+          "FlowDesk AI writes emails, summarises meetings, prioritises tasks and answers workplace questions so professionals save time.",
       },
     ],
   }),
