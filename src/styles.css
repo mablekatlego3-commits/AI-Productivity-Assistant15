@@ -173,12 +173,6 @@
   }
 }
 
-@utility surface-card {
-  background-color: var(--color-card);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-card);
-}
 
 @utility gradient-brand {
   background-image: var(--gradient-brand);
