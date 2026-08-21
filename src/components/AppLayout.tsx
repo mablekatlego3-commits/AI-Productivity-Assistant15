@@ -26,11 +26,14 @@ export const NAV_ITEMS = [
 function Brand() {
   return (
     <div className="flex items-center gap-2.5 px-2">
-      <div className="gradient-brand flex h-9 w-9 items-center justify-center rounded-xl text-primary-foreground">
-        <Sparkles className="h-4.5 w-4.5" aria-hidden />
+      <div className="gradient-brand shadow-glow relative flex h-10 w-10 items-center justify-center rounded-2xl text-primary-foreground">
+        <Sparkles className="h-5 w-5" aria-hidden />
+        <span className="animate-soft-pulse absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full bg-primary-glow" />
       </div>
       <div className="leading-tight">
-        <p className="text-sm font-semibold">FlowDesk AI</p>
+        <p className="text-sm font-extrabold tracking-tight">
+          Flow<span className="text-primary">Desk</span> AI
+        </p>
         <p className="text-xs text-muted-foreground">Productivity assistant</p>
       </div>
     </div>
@@ -41,7 +44,7 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   return (
-    <nav aria-label="Main" className="flex flex-col gap-1 px-2">
+    <nav aria-label="Main" className="flex flex-col gap-1.5 px-3">
       {NAV_ITEMS.map(({ to, label, icon: Icon }) => {
         const active = pathname === to;
         return (
@@ -51,13 +54,19 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
             onClick={onNavigate}
             aria-current={active ? "page" : undefined}
             className={cn(
-              "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+              "group relative flex items-center gap-3 overflow-hidden rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               active
-                ? "bg-sidebar-accent text-sidebar-accent-foreground"
-                : "text-muted-foreground hover:bg-muted hover:text-foreground",
+                ? "gradient-brand text-primary-foreground shadow-elevated"
+                : "text-muted-foreground hover:translate-x-0.5 hover:bg-accent hover:text-accent-foreground",
             )}
           >
-            <Icon className="h-4 w-4 shrink-0" aria-hidden />
+            <Icon
+              className={cn(
+                "h-4 w-4 shrink-0 transition-transform duration-200",
+                !active && "group-hover:scale-110",
+              )}
+              aria-hidden
+            />
             {label}
           </Link>
         );
