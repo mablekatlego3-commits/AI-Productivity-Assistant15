@@ -169,12 +169,12 @@ export function PageHeader({
   icon: typeof Mail;
 }) {
   return (
-    <header className="mb-6 flex items-start gap-3">
-      <div className="gradient-brand hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl text-primary-foreground sm:flex">
+    <header className="animate-rise mb-6 flex items-start gap-3">
+      <div className="gradient-brand shadow-glow hidden h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-primary-foreground sm:flex">
         <Icon className="h-5 w-5" aria-hidden />
       </div>
       <div>
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">{title}</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">{title}</h1>
         <p className="mt-1 max-w-2xl text-sm text-muted-foreground">{description}</p>
       </div>
     </header>
